@@ -1,0 +1,11 @@
+INFO:root:
+Selector: High Level Ordering of Strategies
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread_to_weakest_neutral_planet
+| Sequence: Spread Attack
+| | Check: spread_check
+| | Action: start_spread
+| Sequence: defense
+| | Check: defense_check
+| | Action: defense_action
